@@ -1,3 +1,7 @@
 :root {
     --bs-font-sans-serif: 'Ubuntu', sans-serif;
 }
+
+body { background-color: rgb(243, 243, 243); }
+
+a { color: var(--bs-dark); }
