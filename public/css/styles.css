@@ -13,7 +13,7 @@ a {
 }
 
 /* Main Image and Blob */
-img.main.d-block{
+img.d-block {
     border-radius: 60% 30% / 60% 30%; 
     position: relative;
 }
@@ -58,7 +58,7 @@ img.main.d-block{
   transform: scale(1.1)
 }
 
-.category__img img{
+.category__img img {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,6 +69,10 @@ img.main.d-block{
   overflow: hidden;
   border-radius: 5%;
   object-fit: cover;
+}
+
+.category__img--large img {
+  height: 440px;
 }
 
 .category__img.opacity {
