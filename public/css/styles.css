@@ -2,6 +2,46 @@
     --bs-font-sans-serif: 'Ubuntu', sans-serif;
 }
 
-body { background-color: rgb(243, 243, 243); }
+body { 
+    /* background-color: rgb(243, 243, 243);  */
+    background-image: linear-gradient(rgba(243, 243, 243, 0.65), rgba(243, 243, 243, 0.65)), url('/img/background.jpeg');
+    background-size: 15%;
+}
 
-a { color: var(--bs-dark); }
+a { 
+    color: var(--bs-dark); 
+}
+
+div img {
+    border-radius: 50%;
+    position: relative;
+}
+
+@keyframes rotate {
+    from {
+      rotate: 0deg;
+    }
+    
+    50% {
+      scale: 1 1.11;
+    }
+    
+    to {
+      rotate: 360deg;
+    }
+  }
+
+#blob {
+    background-color: black;
+    height: 575px;
+    aspect-ratio: 1;
+    position: absolute;
+    /* left: 50%; */
+    border-radius: 50%;
+    background: linear-gradient(
+        to right,
+        rgba(248, 95, 35, 0.7),
+        rgba(105, 55, 241, 0.7)
+    );
+    animation: rotate 20s infinite;
+}
