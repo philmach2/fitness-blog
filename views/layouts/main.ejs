@@ -13,25 +13,25 @@
 </head>
 <body>
     <div class="container-xxl px-md-5 bg-white shadow-lg">
-
+        <!-- Header -->
         <header class="p-3 mb-3 border-bottom">
             <div class="container">
               <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                 <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 link-body-emphasis text-decoration-none">
                     <img src="/img/logo.jpeg" width="84" height="68" alt="Fitness Blog - Made with Node.js">
                 </a>
-        
+                <!-- Nav List -->
                 <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
                   <li><a href="/" class="nav-link px-2 link-secondary">Home</a></li>
                   <li><a href="/about" class="nav-link px-2 link-body-emphasis">About</a></li>
                   <li><a href="/submit-workout" class="nav-link px-2 link-body-emphasis">Submit</a></li>
                   <li><a href="/dashboard" class="nav-link px-2 link-body-emphasis">Dashboard</a></li>
                 </ul>
-        
+                <!-- Form -->
                 <form method="POST" action="/search" class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
                   <input type="search" name="searchTerm" class="form-control" placeholder="Search..." aria-label="Search">
                 </form>
-        
+                <!-- Drop Down -->
                 <div class="dropdown text-end">
                   <a href="#" class="d-block link-body-emphasis text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     <img src="/img/user.jpeg" alt="mdo" width="32" height="32" class="rounded-circle">
@@ -52,8 +52,9 @@
             <%- body -%>
         </main>
 
+        <!-- Footer -->
         <footer class="py-5">
-            <p>Build by Phil M. | Made with Node.js</p>
+            <p>Built by Phil Mach | Made with Node.js</p>
         </footer>
 
 
