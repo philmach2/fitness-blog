@@ -18,5 +18,7 @@ const connectDB = async () => {
   }
 }
 
+connectDB()
+
 //function is getting exported to be able to be used elsewhere
 module.exports = connectDB
