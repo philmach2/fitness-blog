@@ -5,11 +5,7 @@ const mongoose = require('mongoose')
 const connectDB = async () => {
   try {
     //process.env.DB_STRING is an environment variable
-    const conn = await mongoose.connect(process.env.DB_STRING, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useFindAndModify: false,
-    })
+    const conn = await mongoose.connect(process.env.DB_STRING)
 
     console.log(`MongoDB Connected: ${conn.connection.host}`)
   } catch (err) {
@@ -17,8 +13,6 @@ const connectDB = async () => {
     process.exit(1)
   }
 }
-
-connectDB()
 
 //function is getting exported to be able to be used elsewhere
 module.exports = connectDB
